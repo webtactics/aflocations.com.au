@@ -1,0 +1,15 @@
+---
+layout: layouts/default.njk
+section: legal-services
+class: services
+---
+
+
+{{ content | safe }}
+
+<div class="servicescontent">
+<h3>James Taylor Bathurst Solicitor Practice Areas:</h3>
+{% set postslist = collections.services | reverse %}
+{% include "components/postslist-3wide.njk" %}
+</div>
+{% include "components/global/liability.html" %}

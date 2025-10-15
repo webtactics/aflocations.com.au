@@ -1,0 +1,26 @@
+<head>
+<meta charset="utf-8">
+<meta name="generator" content="{{ eleventy.generator }}">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="shortcut icon" href="https://jamestaylorbathurstlawyer.com.au/static/favicon.ico" type="image/x-icon">
+<link rel="apple-touch-icon" sizes="180x180" href="https://jamestaylorbathurstlawyer.com.au/static/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://jamestaylorbathurstlawyer.com.au/static/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="https://jamestaylorbathurstlawyer.com.au/static/favicon-16x16.png">
+<link rel="manifest" href="https://jamestaylorbathurstlawyer.com.au/static/site.webmanifest">
+<meta name="view-transition" content="same-origin">
+
+<title>{{ title or metadata.title }} - {{ metadata.title }}</title>
+<link rel="canonical" href="https://jamestaylorbathurstlawyer.com.au{{ page.url or post.url or permalink }}" />
+<meta name="description" content="{{ description or metadata.description or eleventyComputed.description }}" />
+<meta property="og:title" content="{{ title or metadata.title }}" />
+<meta property="og:description" content="{{ description or metadata.description or eleventyComputed.description }}" />
+<meta property="og:image" content="{{ image or metadata.image or eleventyComputed.image }}" />
+<meta property="og:url" content="https://jamestaylorbathurstlawyer.com.au{{ page.url or post.url or permalink }}" />
+
+
+{% set css %}
+    {% include "assets/css/jts-grid.css" %}
+  {% endset %}
+  <style>{{ css | cssmin | safe }}</style>
+
+</head>

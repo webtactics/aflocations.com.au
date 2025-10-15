@@ -1,0 +1,24 @@
+{% extends "layouts/default.njk" %}
+
+{% block bodyclass %}<body class="home {{ class }} " >{% endblock %}
+
+{% block hero %}
+{% include "components/hero-home.njk" %}
+{% endblock %}
+
+{% block content %}
+<main class="content">  
+
+{{ content | safe }}
+
+<div class="servicescontent">
+<h3>James Taylor Bathurst Solicitor offers expertise and experienced legal services in:</h3>
+{% set postslist = collections.services | reverse %}
+{% include "components/postslist-3wide.njk" %}
+</div>
+
+{% include "components/global/lower-home.html" %}
+{% include "components/global/calltoaction.html" %}
+</main>
+{% endblock %}
+

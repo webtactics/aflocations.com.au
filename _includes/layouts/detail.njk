@@ -1,0 +1,30 @@
+{% extends "layouts/default.njk" %}
+
+
+
+
+
+{% block content %} 
+
+<main class="detailcontent">  
+ <div class="grid-2-columns-2x1">
+
+ <div class="detailwrapper">
+{{ content | safe }}
+</div>
+<div class="sidebarwrapper">
+<aside>
+<h3>Practice Areas:</h3>
+{% set postslist = collections.services | reverse %}
+{% include "components/postslist-sidebar.njk" %}
+</aside>
+</div>
+
+ </div>
+
+ {% include "components/global/calltoaction.html" %}
+</main>
+{% endblock %}
+
+
+

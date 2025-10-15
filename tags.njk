@@ -1,0 +1,25 @@
+---
+pagination:
+  data: collections
+  size: 1
+  alias: tag
+  filter:
+    - all
+    - nav
+    - post
+    - posts
+permalink: /legal-services/{{ tag }}/
+layout: layouts/default.njk
+eleventyComputed:
+  title: "Tagged “{{ tag }}”"
+  metaDescription: "All Practice Areas tagged with “{{ tag }}”"
+---
+
+<h1>Tagged “{{ tag }}”</h1>
+
+{% set postslist = collections[tag] %}
+{% include "components/postslist.njk" %}
+
+<nav>
+  <a href="{{ '/legal-services/' | url }}">← Services index</a>
+</nav>

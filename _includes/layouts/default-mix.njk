@@ -1,0 +1,372 @@
+<!doctype html>
+<html {% if section %} data-current="{{ section }}"{% endif %} lang="en">
+
+	{% include "components/head.njk" %}
+
+	
+<body class=" {{ class }} internal" >
+
+<nav class="offcanvas">
+    <button class="close-nav">Close</button>
+    <h3>Menu</h3>
+    <div class="mobilemenu">
+    {Navigator loadprops='0' template='minimal_menu'}
+  </div>
+  </nav>
+  
+  <section class="sliderbox hide-for-print">
+  <div class="hero" style="background: url(https://ik.imagekit.io/webtactics/gtm/assets/Gloucester-Thai-Massage-6_8NONfbWy-.jpg?tr=w-1200,h-800) no-repeat center center;width:100%; background-size:cover;position: relative;"></div> 
+ </section>
+
+  <div class="container">
+   
+<header id="header" class="topbar headerwrapper">
+     
+      <div class="hamburger"><div class="toggle-nav" aria-label="Toggle Navigation"><span class="hamburger-icon"></span>
+        <span class="title-bar-title">Menu</span>
+      </div></div>
+      <div class="logo"><a href="/" title="Return to the homepage | Gloucester Thai Massage" id="logo">
+        <img src="https://ik.imagekit.io/webtactics/gtm/assets/gloucester-thai-massage-logo-150x150_Qm9VcMjWA.jpg?updatedAt=1683952271536" alt="Gloucester Thai Massage" title="Gloucester Thai Massage">
+        </a></div>
+      <div class="navwrapper">
+      {Navigator loadprops='0' template='gtm-grid-nav'}
+        </div>
+      <div class="socialwrapper">
+      <ul class="menusocial">
+        <li><a title="Follow Gloucester Thai Massage on Facebook" href="https://www.facebook.com/GloucesterThaiMassage/" target="_blank"> <img src="https://ik.imagekit.io/webtactics/gtm/assets/facebook-50x50_xSfiXGDeZ.png?tr=w-34,h-34" alt="Follow Gloucester Thai Massage on Facebook" title="Follow Gloucester Thai Massage on Facebook"></a></li>
+      </ul>
+      </div>
+ 
+</header>
+<section role="main" class="content">
+     
+       <h2>{title}</h2>
+{{ content | safe }}
+
+<div class="responsive-embed widescreen">{$map_content}</div>
+</section>
+
+
+<section class="footer"><div class="footerwrap"><p>Joy from Gloucester Thai Massage trained with the prestigious Wat Pho massage school, in Bangkok, Thailand.</p>
+  <p>To <a href="https://www.gtmassage.com.au/booking" title="Make a booking" alt="Make a booking" class="return-link">book a massage</a> please call Joy on <a title="Call Gloucester Thai Massage" href="tel:+61411447704">0411 447 704</a>, or email <a title="joy@gtmassage.com.au" href="mailto:joy@gtmassage.com.au?subject=Booking a massage">joy@gtmassage.com.au</a></p>
+  <p>Gloucester Thai Massage is located at <a title="Gloucester Thai Massage" href="https://goo.gl/maps/Ucb2RNnhJfL2" target="_blank" rel="noopener">Shop 2/78 Church St, Gloucester, 2422</a></p><a class="scrollToTop" style="display: inline;" href="#">Scroll To Top</a></div></section>
+
+
+  </div>
+  
+
+<script src="{root_url}/js/script.js"></script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="off-canvas position-left" id="offCanvasLeftOverlap" data-off-canvas data-transition="overlap">
+ <!-- Close button -->
+<button class="close-button" aria-label="Close menu" type="button" data-close>
+<span aria-hidden="true">&times;</span>
+</button>
+<!-- Menu -->
+<div id="menu_vert">
+<h3>Menu</h3>
+{% include "components/top-nav.njk" %}
+
+<div class="searchsocialwrapper">
+<ul class="sswrapper">
+<li class="socialbarmobile"><a title="Follow us on Facebook" href="https://www.facebook.com/GloucesterThaiMassage/" target="_blank"><i class="fab fa-facebook"></i></a></li></ul>
+</div>
+</div>
+ <!-- end menu -->
+</div>
+<div class="off-canvas-content" data-off-canvas-content>
+<!-- Your page content ends here -->  
+<div class="title-bar show-for-small-only show-for-portrait hide-for-print">
+<div class="grid-x">
+<div class="cell small-6"><div class="title-bar-left">
+<button class="menu-icon" type="button" data-toggle="offCanvasLeftOverlap"></button>
+<span class="title-bar-title">Menu</span>
+</div></div>
+<div class="cell small-6"><div class="title-bar-right">
+<a title="Gloucester Thai Massage" href="/"><img src="https://ik.imagekit.io/webtactics/gtmassage/images/mobile-logo-white-183.png" alt="Gloucester Thai Massage" title="Gloucester Thai Massage"></a>
+</div></div>
+</div>    
+</div>
+
+<section class="sliderbox hide-for-print">
+<div class="home-slide hide-for-print">
+
+<div>
+<div class="internalhero" style="background: url(https://ik.imagekit.io/webtactics/gtm/home/Gloucester-Thai-Massage-6_YoFVxbAty.jpg?tr=w-1200,h-800) no-repeat center center;width:100%; background-size:cover;"></div>
+</div>
+
+
+
+<div>
+<div class="internalhero" style="background: url(https://ik.imagekit.io/webtactics/gtm/home/Gloucester-Thai-Massage-5_BWqqhoC46I.jpg?tr=w-1200,h-800) no-repeat center center;width:100%; background-size:cover;"></div>
+</div>
+
+</div>
+
+
+
+
+
+
+
+
+<div id="header" class="hide-for-print">
+<div class="navbackground hide-for-small-only show-for-landscape">
+  <div class="grid-container">
+<div class="grid-x">
+  <div class="cell small-2">
+<div class="logowrapper">
+<a href="/" title="Return to the homepage | Gloucester Thai Massage" id="logo">
+  <img src="https://ik.imagekit.io/webtactics/gtmassage/images/logo.jpg" alt="Gloucester Thai Massage" title="Gloucester Thai Massage">
+</a>
+</div>
+</div>
+<div class="cell small-8 navtoppad">
+{% include "components/top-nav.njk" %}
+</div>
+<div class="cell small-2">
+<div class="right">
+<div class="searchsocialwrapper">
+<ul class="menusocial">
+<li><a title="Follow Gloucester Thai Massage on Facebook" href="https://www.facebook.com/GloucesterThaiMassage/" target="_blank"><i class="fab fa-facebook"></i></a></li>	
+</ul>
+</div>
+</div>        
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="internalpages">
+<div class="grid-container">
+<div class="up1rempad">
+<div class="grid-x grid-padding-x">
+<div class="large-12 cell">
+<main>
+{{ layoutContent | safe }}
+</main>
+</div>   
+</div>
+</div>
+</div>
+</section> 
+
+
+    
+    
+ 
+<section class="brownborder">
+<div class="grid-container">
+<div class="grid-x">
+<div class="small-12 cell">
+<div class="gallerycenter">
+
+
+
+<div class="gallerycenter"><div class="gallery">
+	<div class="img">
+			
+		<a class="group" href="https://ik.imagekit.io/webtactics/gtmassage/images/Gallery/allshop/gloucester-thai-massage-08.jpg" alt="Gloucester Thai Massage" title="Gloucester Thai Massage" data-title="Gloucester Thai Massage" data-lightbox="cmsmsgallery141"><img src="https://ik.imagekit.io/webtactics/gtmassage/images/Gallery/allshop/gloucester-thai-massage-08.jpg?tr=w-200,h-200" alt="Gloucester Thai Massage" title="Gloucester Thai Massage"></a>
+		</div>
+	<div class="img">
+			
+		<a class="group" href="https://ik.imagekit.io/webtactics/gtmassage/images/Gallery/allshop/gloucester-thai-massage-19.JPG" alt="Gloucester Thai Massage" title="Gloucester Thai Massage" data-title="Gloucester Thai Massage" data-lightbox="cmsmsgallery141"><img src="https://ik.imagekit.io/webtactics/gtmassage/images/Gallery/allshop/gloucester-thai-massage-19.JPG?tr=w-200,h-200" alt="Gloucester Thai Massage" title="Gloucester Thai Massage"></a>
+		</div>
+	<div class="img">
+			
+		<a class="group" href="https://ik.imagekit.io/webtactics/gtmassage/images/Gallery/allshop/Gloucester-Thai-Massage-2.jpg" alt="Gloucester Thai Massage" title="Gloucester Thai Massage" data-title="Gloucester Thai Massage" data-lightbox="cmsmsgallery141"><img src="https://ik.imagekit.io/webtactics/gtmassage/images/Gallery/allshop/Gloucester-Thai-Massage-2.jpg?tr=w-200,h-200" alt="Gloucester Thai Massage" title="Gloucester Thai Massage"></a>
+		</div>
+	<div class="img">
+			
+		<a class="group" href="https://ik.imagekit.io/webtactics/gtmassage/images/Gallery/allshop/gloucester-thai-massage-17.jpg" alt="Gloucester Thai Massage" title="Gloucester Thai Massage" data-title="Gloucester Thai Massage" data-lightbox="cmsmsgallery141"><img src="https://ik.imagekit.io/webtactics/gtmassage/images/Gallery/allshop/gloucester-thai-massage-17.jpg?tr=w-200,h-200" alt="Gloucester Thai Massage" title="Gloucester Thai Massage"></a>
+		</div>
+	<div class="img">
+			
+		<a class="group" href="https://ik.imagekit.io/webtactics/gtmassage/images/Gallery/allshop/gloucester-thai-massage-15.JPG" alt="Gloucester Thai Massage" title="Gloucester Thai Massage" data-title="Gloucester Thai Massage" data-lightbox="cmsmsgallery141"><img src="https://ik.imagekit.io/webtactics/gtmassage/images/Gallery/allshop/gloucester-thai-massage-15.JPG?tr=w-200,h-200" alt="Gloucester Thai Massage" title="Gloucester Thai Massage"></a>
+		</div>
+	<div class="img">
+			
+		<a class="group" href="https://ik.imagekit.io/webtactics/gtmassage/images/Gallery/allshop/gloucester-thai-massage-20.jpg" alt="Gloucester Thai Massage" title="Gloucester Thai Massage" data-title="Gloucester Thai Massage" data-lightbox="cmsmsgallery141"><img src="https://ik.imagekit.io/webtactics/gtmassage/images/Gallery/allshop/gloucester-thai-massage-20.jpg?tr=w-200,h-200" alt="Gloucester Thai Massage" title="Gloucester Thai Massage"></a>
+		</div>
+	<div class="img">
+			
+		<a class="group" href="https://ik.imagekit.io/webtactics/gtmassage/images/Gallery/allshop/Gloucester-Thai-Massage-5.jpg" alt="Gloucester Thai Massage" title="Gloucester Thai Massage" data-title="Gloucester Thai Massage" data-lightbox="cmsmsgallery141"><img src="https://ik.imagekit.io/webtactics/gtmassage/images/Gallery/allshop/Gloucester-Thai-Massage-5.jpg?tr=w-200,h-200" alt="Gloucester Thai Massage" title="Gloucester Thai Massage"></a>
+		</div>
+	<div class="img">
+			
+		<a class="group" href="https://ik.imagekit.io/webtactics/gtmassage/images/Gallery/allshop/gloucester-thai-massage-09.jpg" alt="Gloucester Thai Massage" title="Gloucester Thai Massage" data-title="Gloucester Thai Massage" data-lightbox="cmsmsgallery141"><img src="https://ik.imagekit.io/webtactics/gtmassage/images/Gallery/allshop/gloucester-thai-massage-09.jpg?tr=w-200,h-200" alt="Gloucester Thai Massage" title="Gloucester Thai Massage"></a>
+		</div>
+	<div class="img">
+			
+		<a class="group" href="https://ik.imagekit.io/webtactics/gtmassage/images/Gallery/allshop/gloucester-thai-massage-11.jpg" alt="Gloucester Thai Massage" title="Gloucester Thai Massage" data-title="Gloucester Thai Massage" data-lightbox="cmsmsgallery141"><img src="https://ik.imagekit.io/webtactics/gtmassage/images/Gallery/allshop/gloucester-thai-massage-11.jpg?tr=w-200,h-200" alt="Gloucester Thai Massage" title="Gloucester Thai Massage"></a>
+		</div>
+	<div class="img">
+			
+		<a class="group" href="https://ik.imagekit.io/webtactics/gtmassage/images/Gallery/allshop/hot-stone-massage-90.jpg" alt="Gloucester Thai Massage" title="Gloucester Thai Massage" data-title="Gloucester Thai Massage" data-lightbox="cmsmsgallery141"><img src="https://ik.imagekit.io/webtactics/gtmassage/images/Gallery/allshop/hot-stone-massage-90.jpg?tr=w-200,h-200" alt="Gloucester Thai Massage" title="Gloucester Thai Massage"></a>
+		</div>
+	<div class="img">
+			
+		<a class="group" href="https://ik.imagekit.io/webtactics/gtmassage/images/Gallery/allshop/gloucester-thai-massage-13.jpg" alt="Gloucester Thai Massage" title="Gloucester Thai Massage" data-title="Gloucester Thai Massage" data-lightbox="cmsmsgallery141"><img src="https://ik.imagekit.io/webtactics/gtmassage/images/Gallery/allshop/gloucester-thai-massage-13.jpg?tr=w-200,h-200" alt="Gloucester Thai Massage" title="Gloucester Thai Massage"></a>
+		</div>
+	<div class="img">
+			
+		<a class="group" href="https://ik.imagekit.io/webtactics/gtmassage/images/Gallery/allshop/gloucester-thai-massage-14.JPG" alt="Gloucester Thai Massage" title="Gloucester Thai Massage" data-title="Gloucester Thai Massage" data-lightbox="cmsmsgallery141"><img src="https://ik.imagekit.io/webtactics/gtmassage/images/Gallery/allshop/gloucester-thai-massage-14.JPG?tr=w-200,h-200" alt="Gloucester Thai Massage" title="Gloucester Thai Massage"></a>
+		</div>
+	<div class="img">
+			
+		<a class="group" href="https://ik.imagekit.io/webtactics/gtmassage/images/Gallery/allshop/gloucester-thai-massage-12.jpg" alt="Gloucester Thai Massage" title="Gloucester Thai Massage" data-title="Gloucester Thai Massage" data-lightbox="cmsmsgallery141"><img src="https://ik.imagekit.io/webtactics/gtmassage/images/Gallery/allshop/gloucester-thai-massage-12.jpg?tr=w-200,h-200" alt="Gloucester Thai Massage" title="Gloucester Thai Massage"></a>
+		</div>
+	<div class="img">
+			
+		<a class="group" href="https://ik.imagekit.io/webtactics/gtmassage/images/Gallery/allshop/Gloucester-Thai-Massage-1.jpg" alt="Gloucester Thai Massage" title="Gloucester Thai Massage" data-title="Gloucester Thai Massage" data-lightbox="cmsmsgallery141"><img src="https://ik.imagekit.io/webtactics/gtmassage/images/Gallery/allshop/Gloucester-Thai-Massage-1.jpg?tr=w-200,h-200" alt="Gloucester Thai Massage" title="Gloucester Thai Massage"></a>
+		</div>
+	<div class="img">
+			
+		<a class="group" href="https://ik.imagekit.io/webtactics/gtmassage/images/Gallery/allshop/foot-massage.jpg" alt="Gloucester Thai Massage" title="Gloucester Thai Massage" data-title="Gloucester Thai Massage" data-lightbox="cmsmsgallery141"><img src="https://ik.imagekit.io/webtactics/gtmassage/images/Gallery/allshop/foot-massage.jpg?tr=w-200,h-200" alt="Gloucester Thai Massage" title="Gloucester Thai Massage"></a>
+		</div>
+	<div class="img">
+			
+		<a class="group" href="https://ik.imagekit.io/webtactics/gtmassage/images/Gallery/allshop/gloucester-thai-massage-18.JPG" alt="Gloucester Thai Massage" title="Gloucester Thai Massage" data-title="Gloucester Thai Massage" data-lightbox="cmsmsgallery141"><img src="https://ik.imagekit.io/webtactics/gtmassage/images/Gallery/allshop/gloucester-thai-massage-18.JPG?tr=w-200,h-200" alt="Gloucester Thai Massage" title="Gloucester Thai Massage"></a>
+		</div>
+	<div class="img">
+			
+		<a class="group" href="https://ik.imagekit.io/webtactics/gtmassage/images/Gallery/allshop/gloucester-thai-massage-10.jpg" alt="Gloucester Thai Massage" title="Gloucester Thai Massage" data-title="Gloucester Thai Massage" data-lightbox="cmsmsgallery141"><img src="https://ik.imagekit.io/webtactics/gtmassage/images/Gallery/allshop/gloucester-thai-massage-10.jpg?tr=w-200,h-200" alt="Gloucester Thai Massage" title="Gloucester Thai Massage"></a>
+		</div>
+	<div class="img">
+			
+		<a class="group" href="https://ik.imagekit.io/webtactics/gtmassage/images/Gallery/allshop/thai-massage.jpg" alt="Gloucester Thai Massage" title="Gloucester Thai Massage" data-title="Gloucester Thai Massage" data-lightbox="cmsmsgallery141"><img src="https://ik.imagekit.io/webtactics/gtmassage/images/Gallery/allshop/thai-massage.jpg?tr=w-200,h-200" alt="Gloucester Thai Massage" title="Gloucester Thai Massage"></a>
+		</div>
+	<div class="img">
+			
+		<a class="group" href="https://ik.imagekit.io/webtactics/gtmassage/images/Gallery/allshop/gloucester-thai-massage-16.jpg" alt="Gloucester Thai Massage" title="Gloucester Thai Massage" data-title="Gloucester Thai Massage" data-lightbox="cmsmsgallery141"><img src="https://ik.imagekit.io/webtactics/gtmassage/images/Gallery/allshop/gloucester-thai-massage-16.jpg?tr=w-200,h-200" alt="Gloucester Thai Massage" title="Gloucester Thai Massage"></a>
+		</div>
+	<div class="img">
+			
+		<a class="group" href="https://ik.imagekit.io/webtactics/gtmassage/images/Gallery/allshop/candles.jpg" alt="Gloucester Thai Massage" title="Gloucester Thai Massage" data-title="Gloucester Thai Massage" data-lightbox="cmsmsgallery141"><img src="https://ik.imagekit.io/webtactics/gtmassage/images/Gallery/allshop/candles.jpg?tr=w-200,h-200" alt="Gloucester Thai Massage" title="Gloucester Thai Massage"></a>
+		</div>
+	<div class="img">
+			
+		<a class="group" href="https://ik.imagekit.io/webtactics/gtmassage/images/Gallery/allshop/Gloucester-Thai-Massage-3.jpg" alt="Gloucester Thai Massage" title="Gloucester Thai Massage" data-title="Gloucester Thai Massage" data-lightbox="cmsmsgallery141"><img src="https://ik.imagekit.io/webtactics/gtmassage/images/Gallery/allshop/Gloucester-Thai-Massage-3.jpg?tr=w-200,h-200" alt="Gloucester Thai Massage" title="Gloucester Thai Massage"></a>
+		</div>
+	<div class="img">
+			
+		<a class="group" href="https://ik.imagekit.io/webtactics/gtmassage/images/Gallery/allshop/Gloucester-Thai-Massage-4.jpg" alt="Gloucester Thai Massage" title="Gloucester Thai Massage" data-title="Gloucester Thai Massage" data-lightbox="cmsmsgallery141"><img src="https://ik.imagekit.io/webtactics/gtmassage/images/Gallery/allshop/Gloucester-Thai-Massage-4.jpg?tr=w-200,h-200" alt="Gloucester Thai Massage" title="Gloucester Thai Massage"></a>
+		</div>
+	<div class="img">
+			
+		<a class="group" href="https://ik.imagekit.io/webtactics/gtmassage/images/Gallery/allshop/Gloucester-Thai-Massage-6.jpg" alt="Gloucester Thai Massage" title="Gloucester Thai Massage" data-title="Gloucester Thai Massage" data-lightbox="cmsmsgallery141"><img src="https://ik.imagekit.io/webtactics/gtmassage/images/Gallery/allshop/Gloucester-Thai-Massage-6.jpg?tr=w-200,h-200" alt="Gloucester Thai Massage" title="Gloucester Thai Massage"></a>
+		</div>
+	<div class="img">
+			
+		<a class="group" href="https://ik.imagekit.io/webtactics/gtmassage/images/Gallery/allshop/thai-massage-1.jpg" alt="Gloucester Thai Massage" title="Gloucester Thai Massage" data-title="Gloucester Thai Massage" data-lightbox="cmsmsgallery141"><img src="https://ik.imagekit.io/webtactics/gtmassage/images/Gallery/allshop/thai-massage-1.jpg?tr=w-200,h-200" alt="Gloucester Thai Massage" title="Gloucester Thai Massage"></a>
+		</div>
+
+<div class="galleryclear">&nbsp;</div>
+</div></div>
+
+
+
+
+</div>
+</div>
+</div>
+</div>
+</section>   
+
+
+    
+    
+
+<section class="black footer">
+<div class="grid-container">
+ <div class="grid-x grid-padding-x">
+<div class="large-12 cell">
+<div class="footerwrap">
+{% include "components/footer.njk" %}
+</div>
+</div>
+</div>
+<a class="scrollToTop" style="display: inline;" href="#">Scroll To Top</a></div>
+</section>   
+
+</div>
+<!-- Your page content ends here -->
+</div>
+{% include "components/javascript.njk" %}  
+<script> 	  
+$(document).foundation();
+$('.off-canvas a').on('click', function() {
+  $('.off-canvas').foundation('close');
+});
+</script> 
+<script>
+$(function() {
+    var header = $(".navbackground");
+  
+    $(window).scroll(function() {    
+        var scroll = $(window).scrollTop();
+        if (scroll >= 56) {
+            header.addClass("scrolled");
+        } else {
+            header.removeClass("scrolled");
+        }
+    });
+  
+});
+</script>
+<script>
+$('.home-slide').slick({
+autoplay: true,
+infinite: true,
+pauseOnHover: true,
+swipeToSlide: true,
+autoplaySpeed: 6000,
+speed: 3000,
+arrows: false,
+dots: true,
+fade: true,
+cssEase: 'ease'
+  });
+</script>
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script type="text/javascript" src="https://www.gtmassage.com.au/modules/Gallery/templates/lightbox/js/lightbox.min.js"></script>
+</body>
+
+</html>
