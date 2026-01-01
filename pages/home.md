@@ -1,5 +1,5 @@
 ---
-layout: layouts/home.njks
+layout: layouts/home.njk
 title: AFLocations
 subtitle: AFLocations
 class: home
