@@ -246,12 +246,12 @@ color: var(--black);
 }
 
 .sliderhero.content {  
-  margin:-10rem auto 0 auto;
+  margin:0rem auto 0 auto;
   width: calc(100vw - 2rem);
   max-width: 1280px;
   padding:  0;
   background-color: transparent;
-  min-height:100px;
+  max-height:100px;
 }
 
 
