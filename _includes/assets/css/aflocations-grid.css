@@ -103,30 +103,7 @@ a:not([class]) {
   text-decoration-color: var(--primarydark);
 }
 
-.content p a {
-  color: var(--black);
-  border: none;
-  padding: 0 .2rem;
-  white-space: nowrap;
-  text-decoration-thickness: 0.1rem;
-  text-decoration-style: dotted;
-  text-decoration-color: var(--primary);
-  text-underline-offset: 0.3rem;
-  transition: color .5s,text-decoration-color .6s;
 
-}
-
-.content p a:hover {
-  background: var(--primarydarker);
-  color: var(--white);
-  border: none;
-  text-decoration-thickness: 0.1rem;
-  text-decoration-style: solid;
-  text-decoration-color: var(--black);
-  text-underline-offset: 0.3rem;
-  transition: color .5s,text-decoration-color .6s;
-
-}
 
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
   font-family: 'Encode Sans Condensed', sans-serif;
@@ -144,30 +121,28 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
 
 
 .h1, h1 {
-font-size: calc(2rem + 0.5rem);
+font-size: calc(1.8rem + 0.5rem);
   }
   
 .h2, h2 {
-font-size: calc(1.8rem + 0.5rem);
+font-size: calc(1.5rem + 0.5rem);
 }
 
 
 .h3, h3 {
-font-size: calc(1.6rem + 0.5rem);
+font-size: calc(1.2rem + 0.5rem);
 }
 
-  .sidebarwrapper h3 {color: var(--black);font-size: calc(1.4rem + 0.5rem);}
-
- 
 
 .h4, h4 {
-font-size: calc(1.4rem + 0.5rem);
+font-size: calc(1rem + 0.5rem);
 }
 
 
 
 
-p {font-family: 'Open Sans', sans-serif;
+p {
+font-family: 'Open Sans', sans-serif;
 font-style: normal;
 font-weight: normal;
 color: var(--text);
@@ -1216,16 +1191,15 @@ ul li.taggs a:hover {
 
 .flex-caption.centre { left: 20vw; right: auto; }
 
-.flex-caption h1,
-.flex-caption h2,
-.flex-caption h3 {
+.flex-caption h1
+ {
   color: var(--white);
   font-weight: 700;
   line-height: 1.5;
   text-align: left;
   text-shadow: 2px 2px 4px var(--black);
 }
-
+.flex-caption h2, .flex-caption h3 {color: var(--white);line-height:1.4em;}
 .flex-caption p  {color: var(--white);font-size: 0.75rem;line-height:1.4em;}
 
 /* mobile */
