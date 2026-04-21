@@ -13,18 +13,18 @@
 <meta name="view-transition" content="same-origin">
 
 <title>{{ title or metadata.title }} - {{ metadata.title }}</title>
-<link rel="canonical" href="https://aussieextensions.com.au{{ page.url or post.url or permalink }}" />
+<link rel="canonical" href="https://aflocations.com.au{{ page.url or post.url or permalink }}" />
 <meta name="description" content="{{ description or metadata.description or eleventyComputed.description }}" />
 <meta property="og:title" content="{{ title or metadata.title }}" />
 <meta property="og:description" content="{{ description or metadata.description or eleventyComputed.description }}" />
 <meta property="article:published_time" content="{{ page.datecreated or datecreated }}" />
 <meta property="article:modified_time" content="{{ page.date }}" />
 <meta property="og:image" content="{{ image or metadata.image or eleventyComputed.image }}" />
-<meta property="og:url" content="https://aussieextensions.com.au{{ page.url or post.url or permalink }}" />
+<meta property="og:url" content="https://aflocations.com.au{{ page.url or post.url or permalink }}" />
 
 
 {% set css %}
-    {% include "assets/css/aussie-ext-grid.css" %}
+    {% include "assets/css/aflocations-grid.css" %}
   {% endset %}
   <style>{{ css | cssmin | safe }}</style>
   <style>
