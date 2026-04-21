@@ -1661,8 +1661,12 @@ ul li.taggs a:hover {
   padding:0;margin: 0;
 }
 
-.slick-track {
-background: url("/static/img/assets/dot.png") repeat fixed 0 0 transparent;
-z-index: 1000;
-}
 
+
+.dot-overlay {
+  position: absolute;
+  inset: 0;                        /* covers the whole slide */
+  background-image: url("/static/img/assets/dot.png");
+  background-repeat: repeat;       /* tiles in both directions */
+  pointer-events: none;            /* clicks pass through to the slide */
+}
