@@ -1645,11 +1645,7 @@ ul li.taggs a:hover {
   text-shadow: 2px 2px 4px var(--black);
 }
 
-/* animate caption in on active slide */
-.slick-active .flex-caption {
 
-  opacity: 1;
-}
 
 /* mobile */
 @media screen and (max-width: 700px) {
