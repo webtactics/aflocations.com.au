@@ -333,8 +333,8 @@ color: var(--black);
 
 .logo img {
     background-color: var(--primary);
-  aspect-ratio: 4/1;
-max-width:200px;
+  aspect-ratio: 310/98;
+max-width:300px;
 -webkit-transition: all var(--animation-delay);
 -moz-transition: all var(--animation-delay);
 -ms-transition: all var(--animation-delay);
