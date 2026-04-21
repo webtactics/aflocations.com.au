@@ -1665,8 +1665,9 @@ ul li.taggs a:hover {
 background: url("/static/img/assets/dot.png") repeat fixed 0 0 transparent;
   height: auto;
   min-height: 100%;
-  padding: 50px;
+  padding: 0;
   position: relative;
   z-index: 8;
 }
 
+.internalhero {  z-index: -3;}
