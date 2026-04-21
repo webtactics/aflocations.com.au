@@ -25,7 +25,7 @@
 --animation-delay-fast: 0.3s;
 --nav-height:54px;
 
---nav-height-scrolled:44px;
+
 }
 
 
@@ -289,8 +289,7 @@ color: var(--black);
       "hamburger logo navwrapper socialwrapper";
       grid-template-rows: 54px; } 
   
-      .headerwrapper.scrolled {
-      grid-template-rows: 44px; } 
+
   }
   @media only screen and (min-width: 1300px) {  
     .headerwrapper {
@@ -333,8 +332,8 @@ color: var(--black);
 
 .logo img {
     background-color: var(--primary);
-  aspect-ratio: 310/98;
-max-width:310px;
+  aspect-ratio: 330/118;
+max-width:330px;
 -webkit-transition: all var(--animation-delay);
 -moz-transition: all var(--animation-delay);
 -ms-transition: all var(--animation-delay);
@@ -345,27 +344,18 @@ padding:1rem;
 }
 
 
-.scrolled .logo img {
-    background-color: var(--primary);
-  max-width:200px;
--webkit-transition: all var(--animation-delay);
--moz-transition: all var(--animation-delay);
--ms-transition: all var(--animation-delay);
--o-transition: all var(--animation-delay);
-transition: all var(--animation-delay);
 
-}
 
 
 
 @media screen and (min-width: 1025px) {
     .logo img {max-width:300px;}
-    .scrolled .logo img {max-width:280px;}
+
 }
 
 @media screen and (min-width: 1500px) {
     .logo img {max-width:310px;}
-    .scrolled .logo img {max-width:200px;}
+  
 }
 
 
@@ -449,25 +439,7 @@ display: none;
   padding:10px;
  }
 
-.scrolled .toggle-nav {
-  display: block;
-  margin: 5px 10px;
-  font-size: 1rem;
-  font-weight: 400;
-  color: white;
-  cursor: pointer;
-  background: transparent;
-  border: none;
-  width: 34px;
-  height: 34px;
-  -webkit-transition: all var(--animation-delay);
-  -moz-transition: all var(--animation-delay);
-  -ms-transition: all var(--animation-delay);
-  -o-transition: all var(--animation-delay);
-  transition: all var(--animation-delay);
-  z-index: 3;
-  padding:5px;
- }
+
 
  @media screen and (max-width: 1025px) {
   .toggle-nav {
@@ -490,25 +462,6 @@ display: none;
   padding:5px;
  }
 
- .scrolled .toggle-nav {
-  display: block;
-  margin: 5px;
-  font-size: 1rem;
-  font-weight: 400;
-  color: white;
-  cursor: pointer;
-  background: transparent;
-  border: none;
-  width: 34px;
-  height: 34px;
-  -webkit-transition: all var(--animation-delay);
-  -moz-transition: all var(--animation-delay);
-  -ms-transition: all var(--animation-delay);
-  -o-transition: all var(--animation-delay);
-  transition: all var(--animation-delay);
-  z-index: 3;
-  padding:5px;
-}
 
 
 }
@@ -642,14 +595,7 @@ transition: all var(--animation-delay);
     background-color:var(--primary60);}
   }
 
-.topbar.scrolled {
-  background-color: var(--primary60);
-  -webkit-transition: all var(--animation-delay);
--moz-transition: all var(--animation-delay);
--ms-transition: all var(--animation-delay);
--o-transition: all var(--animation-delay);
-transition: all var(--animation-delay);
-}
+
 
 /* Menus */
 
@@ -815,31 +761,6 @@ margin:10px 0;
 
 
 
-.scrolled .menusocial > li > a {
-  line-height: 44px;
-  font-size: 1rem;
-  width:auto;
-  height:34px;
-text-decoration: none;
-font-weight: 400;
-cursor: pointer;
-display: block;
-position: relative;
-border-bottom: none;
-background-color: var(--black);
-margin:5px 0;
--webkit-transition: all var(--animation-delay);
-  -moz-transition: all var(--animation-delay);
-  -ms-transition: all var(--animation-delay);
-  -o-transition: all var(--animation-delay);
-  transition: all var(--animation-delay);
-}
-.scrolled .menusocial > li > a:hover {
- 
-  background-color: var(--white);
-  border-bottom: none;
-  transition: all var(--animation-delay-fast);
-}
 
 span.phonetext {font-size:1rem;line-height: 34px;text-align:right;color: var(--white);display: flex;justify-content: center;-webkit-transition: all var(--animation-delay);padding: 0 0.25rem 0 0.5rem;
   -moz-transition: all var(--animation-delay);
@@ -1168,16 +1089,7 @@ ul.main-menu {
     transition: all var(--animation-delay);
   }
   
-  .scrolled ul.main-menu {
-  
-    height:44px;
-    line-height:44px;
-    -webkit-transition: all var(--animation-delay);
-    -moz-transition: all var(--animation-delay);
-    -ms-transition: all var(--animation-delay);
-    -o-transition: all var(--animation-delay);
-    transition: all var(--animation-delay);
-  }
+
   
   ul.main-menu li {
     list-style: none;
@@ -1232,41 +1144,7 @@ ul.main-menu {
     height:54px;
     line-height:54px;
   }
-  .scrolled .main-menu > li > a 
-  {
-    height:44px;
-    line-height:44px;
-    -webkit-transition: all var(--animation-delay);
-    -moz-transition: all var(--animation-delay);
-    -ms-transition: all var(--animation-delay);
-    -o-transition: all var(--animation-delay);
-    transition: all var(--animation-delay);
- 
-}
-.scrolled .main-menu > li > a:hover {
-  -webkit-transition: all var(--animation-delay);
-  -moz-transition: all var(--animation-delay);
-  -ms-transition: all var(--animation-delay);
-  -o-transition: all var(--animation-delay);
-  transition: all var(--animation-delay);
-  color: var(--white);
-  background-color: var(--primary);
-  border:none;
-  width: 100%;
-}
-.scrolled .main-menu > li.current > a,  .scrolled .main-menu > li.active-class > a {
-  -webkit-transition: all var(--animation-delay);
-  -moz-transition: all var(--animation-delay);
-  -ms-transition: all var(--animation-delay);
-  -o-transition: all var(--animation-delay);
-  transition: all var(--animation-delay);
-  color: var(--white);
-  background-color: var(--primary);
-  border:none;
-  width: 100%;
-  height:44px;
-  line-height:44px;
-}
+
 
 form {
   display:grid;
