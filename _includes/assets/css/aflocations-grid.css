@@ -363,8 +363,8 @@ transition: all var(--animation-delay);
 }
 
 @media screen and (min-width: 1500px) {
-    .logo img {max-width:340px;}
-    .scrolled .logo img {max-width:300px;}
+    .logo img {max-width:310px;}
+    .scrolled .logo img {max-width:200px;}
 }
 
 
