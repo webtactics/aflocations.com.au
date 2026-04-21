@@ -1171,10 +1171,6 @@ ul li.taggs a:hover {
   z-index: 1;
 }
 
-.sliderbox {
-  display: flex;
-justify-content: center;
-align-items: center;}
 
 /* captions: absolute inside slide-wrap, above dot */
 .flex-caption {
