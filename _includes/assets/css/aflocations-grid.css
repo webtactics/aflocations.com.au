@@ -245,17 +245,7 @@ color: var(--black);
   color: var(--white);
 }
 
-.sliderhero.content {  
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  z-index: 2;
-  max-height: none;
-  padding: 0;
-  background-color: transparent;
-}
+
 
 
 .profile.content {  
@@ -1667,36 +1657,28 @@ ul li.taggs a:hover {
 
 
 
-/* slider section needs position context */
-.sliderbox {
+
+
+/* ── Hero Slider ─────────────────────────────────────────── */
+
+/* .slide-wrap is the position context for each slide's layers */
+.slide-wrap {
   position: relative;
+  overflow: hidden;
 }
 
-/* force Slick's own wrappers to pass height through */
-.home-slide,
-.home-slide .slick-list,
-.home-slide .slick-track,
-.home-slide .slick-slide,
-.home-slide .slick-slide > div {
-  height: 100vh;
-  height: 100svh;
-}
-
-/* each slide's inner content div — Slick wraps each slide in an extra div */
-.home-slide .slick-slide > div > div {
-  position: relative;
-  height: 100vh;
-  height: 100svh;
-}
-
-/* background image fills the slide */
+/* internalhero: stays in normal flow to give .slide-wrap its height */
 .internalhero {
-  position: absolute;
-  inset: 0;
-  height: 100%;
+  display: block;
+  width: 100%;
+  height: 100vh;
+  height: 100svh;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-/* dot overlay sits above the image, below text */
+/* dot overlay: sits above image, below caption */
 .dot-overlay {
   position: absolute;
   inset: 0;
@@ -1704,4 +1686,17 @@ ul li.taggs a:hover {
   background-repeat: repeat;
   pointer-events: none;
   z-index: 1;
+}
+
+/* sliderhero: overlays the full slide, above dot */
+.sliderhero.content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 2;
+  max-height: none;
+  padding: 0;
+  background-color: transparent;
 }
