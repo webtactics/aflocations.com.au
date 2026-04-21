@@ -21,5 +21,3 @@ From our Sydney base, we cover locations across Australia and the South Pacific.
 Our role is to find those unique locations to best suit your brief and then to take the stress and hassle out of all aspects of the location management process.
 
 AFL Owners Morgan Supple and Chris Mayer-Plummer have been around the film industry for a long time. With their dedicated team of experienced and creative scouts, they take pride in an ability to interpret your brief with creativity and insight, whilst negotiating the detail and complexity of location management.
-
-  {% include "components/global/contact.html" %}
