@@ -1621,7 +1621,7 @@ ul li.taggs a:hover {
   position: absolute;
   bottom: 20vh;
   left: 0;
-  z-index: 2;
+  z-index: 1000;
   background: var(--primary60);
   color: var(--white);
   font-size: 14px;
@@ -1633,7 +1633,7 @@ ul li.taggs a:hover {
   text-align: center;
 }
 .flex-caption.left  { left: 0; right: auto; }
-.flex-caption.centre { left: 10vw; right: auto; }
+.flex-caption.centre { left: 20vw; right: auto; }
 .flex-caption.right  { left: auto; right: 0; }
 
 .flex-caption h2,
@@ -1647,8 +1647,7 @@ ul li.taggs a:hover {
 
 /* animate caption in on active slide */
 .slick-active .flex-caption {
-  animation-name: fadeInUp;
-  animation-duration: 1s;
+
   opacity: 1;
 }
 
