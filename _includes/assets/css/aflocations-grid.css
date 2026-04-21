@@ -247,17 +247,14 @@ color: var(--black);
 
 .sliderhero.content {  
   position: absolute;
-  inset: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
   z-index: 2;
-  width: calc(100vw - 2rem);
-  max-width: 1280px;
   max-height: none;
-  margin: 0 auto;
   padding: 0;
   background-color: transparent;
-  display: flex;
-  align-items: flex-end;
-  justify-content: flex-start;
 }
 
 
@@ -1675,14 +1672,24 @@ ul li.taggs a:hover {
   position: relative;
 }
 
-/* each slide's outer div — height drives the whole stack */
-.home-slide > div {
+/* force Slick's own wrappers to pass height through */
+.home-slide,
+.home-slide .slick-list,
+.home-slide .slick-track,
+.home-slide .slick-slide,
+.home-slide .slick-slide > div {
+  height: 100vh;
+  height: 100svh;
+}
+
+/* each slide's inner content div — Slick wraps each slide in an extra div */
+.home-slide .slick-slide > div > div {
   position: relative;
   height: 100vh;
   height: 100svh;
 }
 
-/* background image fills the slide (remove inline height from .njk) */
+/* background image fills the slide */
 .internalhero {
   position: absolute;
   inset: 0;
