@@ -144,11 +144,11 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
 
 
 .h1, h1 {
-font-size: calc(2.2rem + 0.5rem);
+font-size: calc(2rem + 0.5rem);
   }
   
 .h2, h2 {
-font-size: calc(2rem + 0.5rem);
+font-size: calc(1.8rem + 0.5rem);
 }
 
 
@@ -158,13 +158,10 @@ font-size: calc(1.6rem + 0.5rem);
 
   .sidebarwrapper h3 {color: var(--black);font-size: calc(1.4rem + 0.5rem);}
 
-
-  .postsumtitle {padding:1rem 0 0 0;}
-
  
 
 .h4, h4 {
-font-size: calc(1.3rem + 0.5rem);
+font-size: calc(1.4rem + 0.5rem);
 }
 
 
@@ -522,118 +519,8 @@ transition: all var(--animation-delay);
 
 /* Menus */
 
-ul.menusocial,  ul.second-level {
-  list-style: none;
-  margin: 0;
-  margin-block-start: 0;
-    margin-block-end:0;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    padding-inline-start: 0;
-}
+  
 
-ul.menusocial li {
-  float: right;
-  margin:0 0.5rem 0 0;
-}
-
-
-
-
-ul.footer-menu {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  padding: 0;
-  margin: 0;
-  }
-  
-  
-  
-  ul.footer-menu li {
-    list-style: none;
-    display: inline-block;
-    padding: 0;
-  }
-
-
-  
-  .footer-menu > li > a {
-    padding: 0 2rem;
-    height:36px;
-    line-height: 36px;
-    -webkit-transition: all var(--animation-delay);
-    -moz-transition: all var(--animation-delay);
-    -ms-transition: all var(--animation-delay);
-    -o-transition: all var(--animation-delay);
-    transition: all var(--animation-delay);
-    color: var(--white);
-    background-color: transparent;
-    border:none;
-    width: 100%;
-    display: inline-block;
-    text-decoration: none;
-   
-  }
-  
-  .footer-menu > li > a:hover {
-    -webkit-transition: all var(--animation-delay);
-    -moz-transition: all var(--animation-delay);
-    -ms-transition: all var(--animation-delay);
-    -o-transition: all var(--animation-delay);
-    transition: all var(--animation-delay);
-    color: var(--white);
-    background-color: var(--primary);
-    border:none;
-    width: 100%;
-  }
-  .footer-menu > li.current > a, .footer-menu > li.active-class > a {
-    -webkit-transition: all var(--animation-delay);
-    -moz-transition: all var(--animation-delay);
-    -ms-transition: all var(--animation-delay);
-    -o-transition: all var(--animation-delay);
-    transition: all var(--animation-delay);
-    color: var(--black);
-    background-color: var(--primarydarker);
-    border:none;
-    width: 100%;
-  }
-  
-  
-  
-  @media (max-width: 768px) {
-  
-  
-    ul.footer-menu {
-      display: grid;
-      grid-template-columns: 1fr;
-      justify-content: center;
-      align-items: center;
-    }
-    ul.footer-menu li {
-      list-style: none;
-      display: inline-block;
-      padding: 0;
-    }
-  
-  .footer-menu > li > a {
-    padding: 0 2rem;
-    height: auto;
-    border-bottom:1px solid var(--lightgrey);
-  }
- .footer-menu > li > a:hover{
-  padding: 0 2rem;
-    height: auto;
-    border-bottom:1px solid var(--primarydark);
-  }
-
-
-  .footer-menu > li:last-child  > a {
-    padding: 0 2rem;
-    height: auto;
-    border-bottom:1px solid transparent;
-  }
-  }
 .menusocial img {float:left; padding:0;background-color: var(--white);}
 .menusocial:hover img {float:left; padding:0;background-color: var(--white);}
 
@@ -704,26 +591,7 @@ margin: 0 10px;
 }
 
 
-.ctacallwrapper {margin:0;height:34px;padding:0;width:160px; }
-.ctacallwrapper:hover {margin:0;height:34px;padding:0; }
 
-.ctacallwrapper ul.menusocial li {
-float: none;
-margin: 0;
-}
-
-.ctacallwrapper span.phonetext {font-size:1rem;line-height: 34px;color: var(--white);display: flex;justify-content: center;-webkit-transition: all var(--animation-delay);
-  -moz-transition: all var(--animation-delay);
-  -ms-transition: all var(--animation-delay);
-  -o-transition: all var(--animation-delay);
-  transition: all var(--animation-delay);}
-  .ctacallwrapper .menusocial:hover .phonetext {font-size:1rem;font-weight:700;line-height: 34px;color: var(--black);display: flex;justify-content: center;-webkit-transition: all var(--animation-delay);
-  -moz-transition: all var(--animation-delay);
-  -ms-transition: all var(--animation-delay);
-  -o-transition: all var(--animation-delay);
-  transition: all var(--animation-delay);}
-
-.ctacallwrapper  .menusocial > li > a {line-height: 34px;margin: 0;}
 
 
 .mobilemenu {padding:0 0 1rem;}
@@ -797,64 +665,6 @@ background-color: var(--primary); font-weight: bold;}
 
 
 
-
-    .footer {
-      width: 100%;
-      margin: 0 auto;
-      background-color: var(--mattblack);
-   
-    }
-
-  
-  .footernavwrapper {
-    background-color: var(--mattblack);
-  }
-  .footernavfullwidth {   
-    width: 100%;
-    margin: 0 auto;
-    padding: 0;
-    background-color: var(--black);
-  border-bottom: 1px solid var(--primarylight);
-}
-
-    .footernav {
-    margin: 0 auto;
-    padding: 0;
-    max-width: 1280px;
-    background-color: var(--black);
-    }
-
-
-
-
-    .footerwrap {max-width:1280px;margin:0 auto;padding:1rem;
-    color: var(--white);
-    font-size: 0.875rem;
-    text-align: center;
-    }
-    .footerwrap p {
-      color: var(--white);
-      font-size: 0.875rem;
-    }
-    
-    .footerwrap p a {
-      color: var(--white);
-      background: var(--black);
-      border: none;
-      padding: 0 0.125rem;
-      white-space: nowrap;
-      border-bottom: 1px dotted var(--white);
-      text-decoration: none;
-     
-    }
-    
-    .footerwrap p a:hover {
-      color: var(--white);
-      background: var(--primary);
-      border: none;
-      border-bottom: 1px dotted var(--primary);
-    
-    }
 
 
 
@@ -1416,7 +1226,7 @@ ul li.taggs a:hover {
   text-shadow: 2px 2px 4px var(--black);
 }
 
-.flex-caption p  {color: var(--white);font-size: 0.8rem;line-height:1.4em;}
+.flex-caption p  {color: var(--white);font-size: 0.75rem;line-height:1.4em;}
 
 /* mobile */
 @media screen and (max-width: 700px) {
