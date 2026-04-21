@@ -334,12 +334,13 @@ color: var(--black);
 .logo img {
     background-color: var(--primary);
   aspect-ratio: 310/98;
-max-width:300px;
+max-width:310px;
 -webkit-transition: all var(--animation-delay);
 -moz-transition: all var(--animation-delay);
 -ms-transition: all var(--animation-delay);
 -o-transition: all var(--animation-delay);
 transition: all var(--animation-delay);
+padding:1rem;
 
 }
 
