@@ -12,7 +12,7 @@ eleventyNavigation:
   key: About-Us
   order: 2
 ---
-Iconic, inspired and filmic locations – that’s our specialty.
+<strong>Iconic, inspired and filmic locations</strong> – that’s our specialty.
 
 From urban grunge, to sophisticated lifestyle or rural idyll - chances are we’ll have it in our extensive database, or if not, we’ll find it for you.
 
