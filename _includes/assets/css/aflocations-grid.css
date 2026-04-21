@@ -1519,29 +1519,28 @@ ul li.taggs a:hover {
   width: calc(80vw - 2rem);
   max-width: 1000px;
   border-radius: 10px;
-  text-align: center;
+  text-align: left;
 }
 
 .flex-caption.centre { left: 20vw; right: auto; }
 
-
+.flex-caption h1,
 .flex-caption h2,
 .flex-caption h3 {
   color: var(--white);
   font-weight: 700;
   line-height: 1.5;
-  text-align: center;
+  text-align: left;
   text-shadow: 2px 2px 4px var(--black);
 }
 
-
+.flex-caption p  {color: var(--white);font-size: 1rem;}
 
 /* mobile */
 @media screen and (max-width: 700px) {
   .flex-caption,
-  .flex-caption.left,
   .flex-caption.centre,
-  .flex-caption.right {
+  {
     left: 1rem;
     right: 1rem;
     width: auto;
