@@ -1434,8 +1434,18 @@ input.hidden {
   -webkit-animation-name:fadeInUp;
   animation-name:fadeInUp
 }
+
+
+
+@keyframes fadein {
+  from {opacity:0;}
+  to {opacity:1;}
+}
+
+
+
 .slick-active .flex-caption {
-  animation-name:fadeInUp;
+  animation-name: fadein;
   animation-duration:1s;
   opacity:1
 }
