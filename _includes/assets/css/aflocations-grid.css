@@ -1,13 +1,13 @@
 :root {
---primary: hsla(120deg, 26%, 40%, 1);
+--primary: hsla(0,0%,0%,1);
 --yellow: hsla(36, 84.42%, 45.29%, 1);
 --primarylight: hsla(120deg, 26%, 40%, 0.1);
 --primarydark: rgb(5, 56, 5);
 --primarydarker:  rgb(8, 99, 43);
---primary30: hsla(120deg, 26%, 40%, 0.3);
---primary45: hsla(120deg, 26%, 40%, 0.45);
---primary60: hsla(120deg, 26%, 40%, 0.6);
---primary80: hsla(120deg, 26%, 40%, 0.8);
+--primary30: hsla(0,0%,0%,0.3);
+--primary45: hsla(0,0%,0%,0.45);
+--primary60: hsla(0,0%,0%,0.6);
+--primary80: hsla(0,0%,0%,0.8);
 --white: #ffffff;
 --white10: hsla(0,0%,100%,0.1);
 --white50: hsla(0,0%,100%,0.5);
