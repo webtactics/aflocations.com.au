@@ -246,8 +246,6 @@ color: var(--black);
 }
 
 
-
-
 .profile.content {  
   margin:0 auto;
   width: calc(100vw - 2rem);
@@ -1441,50 +1439,6 @@ input.hidden {
   animation-duration:1s;
   opacity:1
 }
-.flex-caption {
-  background:var(--primary60);
-  color:var(--white);
-  font-size:14px;
-  bottom:20vh;
-  left:0;
-  line-height:18px;
-  padding:20px;
-  position:absolute;
-  text-align:center;
-  width: calc(40vw - 2rem);
-  max-width: 600px;
-  margin:0;
-  border-radius:10px;
-  z-index: 1000;
-}
-.flex-caption.left {
-  left:0;
-  right:auto;
-  top:auto
-}
-.flex-caption.centre {
-  left:10vw;
-  right:auto;
-  top:auto
-}
-.flex-caption.right {
-  left:auto;
-  right:0;
-  top:auto
-}
-
-.flex-caption h2, .flex-caption h3  {
-color:var(--white);
-font-weight:700;
-line-height: 1.5;
-text-align: center;
-text-shadow: 2px 2px 4px var(--black);
-}
-
-/* Services */
-
-
-
 /* Caption Text */
 
 .caption-text {
@@ -1508,29 +1462,6 @@ right:0;
 .caption-text h1 span {
   background:var(--primary);
   padding:.68rem
-}
-@media screen and (max-width:700px) {
-
-.flex-caption {
- 
-  font-size:14px;
-  bottom:20vh;
-  left:auto;
-  right:auto;
-  line-height:18px;
-  padding:10px;
-  position:absolute;
-  text-align:center;
-  width: calc(100vw - 2rem);
-  margin:0 auto;
-  border-radius:8px;
-}
-
-.flex-caption.left, .flex-caption.centre, .flex-caption.right {
-  left:1rem;
-  right:auto;
-  top:auto
-}
 }
 
 /* Visually Hidden */
@@ -1657,17 +1588,14 @@ ul li.taggs a:hover {
 
 
 
+/* ── Hero Slider ─────────────────────── */
 
-
-/* ── Hero Slider ─────────────────────────────────────────── */
-
-/* .slide-wrap is the position context for each slide's layers */
+/* slide-wrap is the stacking context for each slide */
 .slide-wrap {
   position: relative;
-  overflow: hidden;
 }
 
-/* internalhero: stays in normal flow to give .slide-wrap its height */
+/* internalhero: in normal flow — its height drives the slide height */
 .internalhero {
   display: block;
   width: 100%;
@@ -1678,25 +1606,61 @@ ul li.taggs a:hover {
   background-size: cover;
 }
 
-/* dot overlay: sits above image, below caption */
+/* dot overlay: above the image */
 .dot-overlay {
   position: absolute;
-  inset: 0;
+  top: 0; left: 0; right: 0; bottom: 0;
   background-image: url('static/img/dot.png');
   background-repeat: repeat;
   pointer-events: none;
   z-index: 1;
 }
 
-/* sliderhero: overlays the full slide, above dot */
-.sliderhero.content {
+/* captions: absolute inside slide-wrap, above dot */
+.flex-caption {
   position: absolute;
-  top: 0;
+  bottom: 20vh;
   left: 0;
-  right: 0;
-  bottom: 0;
   z-index: 2;
-  max-height: none;
-  padding: 0;
-  background-color: transparent;
+  background: var(--primary60);
+  color: var(--white);
+  font-size: 14px;
+  line-height: 18px;
+  padding: 20px;
+  width: calc(40vw - 2rem);
+  max-width: 600px;
+  border-radius: 10px;
+  text-align: center;
+}
+.flex-caption.left  { left: 0; right: auto; }
+.flex-caption.centre { left: 10vw; right: auto; }
+.flex-caption.right  { left: auto; right: 0; }
+
+.flex-caption h2,
+.flex-caption h3 {
+  color: var(--white);
+  font-weight: 700;
+  line-height: 1.5;
+  text-align: center;
+  text-shadow: 2px 2px 4px var(--black);
+}
+
+/* animate caption in on active slide */
+.slick-active .flex-caption {
+  animation-name: fadeInUp;
+  animation-duration: 1s;
+  opacity: 1;
+}
+
+/* mobile */
+@media screen and (max-width: 700px) {
+  .flex-caption,
+  .flex-caption.left,
+  .flex-caption.centre,
+  .flex-caption.right {
+    left: 1rem;
+    right: 1rem;
+    width: auto;
+    bottom: 15vh;
+  }
 }
