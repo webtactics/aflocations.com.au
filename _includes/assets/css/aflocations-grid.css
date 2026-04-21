@@ -1175,7 +1175,7 @@ ul li.taggs a:hover {
 /* captions: absolute inside slide-wrap, above dot */
 .flex-caption {
   position: relative;
-  bottom: 20vh;
+  top: 20vh;
   left: 20vw;
   right: auto;
   z-index: 1000;
@@ -1183,7 +1183,7 @@ ul li.taggs a:hover {
   color: var(--white);
   font-size: 14px;
   line-height: 18px;
-  padding: 20px;
+  padding: 1rem;
   width: calc(80vw - 2rem);
   max-width: 1000px;
   border-radius: 10px;
