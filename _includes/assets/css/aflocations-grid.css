@@ -1661,7 +1661,7 @@ ul li.taggs a:hover {
   padding:0;margin: 0;
 }
 
-.internalhero {
+.slick-slide {
 background: url("/static/img/assets/dot.png") repeat fixed 0 0 transparent;
 z-index: 8;
 }
