@@ -246,18 +246,12 @@ color: var(--black);
 }
 
 .sliderhero.content {  
-  position: absolute;
-  inset: 0;
-  z-index: 2;
+  margin:0rem auto 0 auto;
   width: calc(100vw - 2rem);
   max-width: 1280px;
-  max-height: none;
-  margin: 0 auto;
-  padding: 0;
+  padding:  0;
   background-color: transparent;
-  display: flex;
-  align-items: flex-end;
-  justify-content: flex-start;
+  max-height:100px;
 }
 
 
@@ -1462,7 +1456,7 @@ input.hidden {
   left:0;
   line-height:18px;
   padding:20px;
-  position:absolute;
+  position:relative;
   text-align:center;
   width: calc(40vw - 2rem);
   max-width: 600px;
@@ -1526,13 +1520,14 @@ right:0;
 
 .flex-caption {
  
+
   font-size:14px;
   bottom:20vh;
   left:auto;
-  right:auto;
+    right:auto;
   line-height:18px;
   padding:10px;
-  position:absolute;
+   position:absolute;
   text-align:center;
   width: calc(100vw - 2rem);
   margin:0 auto;
@@ -1670,26 +1665,18 @@ ul li.taggs a:hover {
 
 
 
-/* slider section needs position context */
-.sliderbox {
-  position: relative;
-}
-
-/* each slide's outer div — height drives the whole stack */
+/* each slide's outer div */
 .home-slide > div {
   position: relative;
-  height: 100vh;
-  height: 100svh;
 }
 
-/* background image fills the slide (remove inline height from .njk) */
+/* background image fills the slide */
 .internalhero {
   position: absolute;
   inset: 0;
-  height: 100%;
 }
 
-/* dot overlay sits above the image, below text */
+/* dot overlay sits above the image */
 .dot-overlay {
   position: absolute;
   inset: 0;
@@ -1697,4 +1684,10 @@ ul li.taggs a:hover {
   background-repeat: repeat;
   pointer-events: none;
   z-index: 1;
+}
+
+/* text sits above both */
+.sliderhero.content {
+  position: relative;
+  z-index: 2;
 }
