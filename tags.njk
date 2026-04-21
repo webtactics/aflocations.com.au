@@ -1,0 +1,24 @@
+---
+pagination:
+  data: collections
+  size: 1
+  alias: tag
+  filter:
+    - all
+    - nav
+    - post
+    - posts
+permalink: /tagged/{{ tag }}/
+layout: layouts/default.njk
+eleventyComputed:
+  title: "Tagged “{{ tag }}”"
+  metaDescription: "All Events, Results and News tagged with “{{ tag }}”"
+  description: "All Events, Results and News tagged with “{{ tag }}”"
+---
+
+
+
+{% set postslist = collections[tag] | reverse %}
+{% include "components/postslist.njk" %}
+
+

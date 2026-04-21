@@ -1,0 +1,8 @@
+{
+    "emmet.includeLanguages": {
+        "njk": "nunjucks"
+    },
+    "files.exclude": {
+        "_notes/": true
+    }
+}

@@ -1,0 +1,24 @@
+{% extends "layouts/default.njk" %}
+
+
+{% block header %}
+<body class=" {{ class }} " >
+{% include "components/header.njk" %}
+{% include "components/off-canvas.njk" %}
+{% endblock %}
+
+
+
+  {% block hero %}
+  {% include "components/hero-home.njk" %}
+  {% endblock %}
+
+
+
+{% block profile %}
+<section class="sectionprofile">  
+<div class="profile content fade-in"> 
+{% include "components/profile.html" %}
+</div>
+</section>
+{% endblock %}

@@ -1,0 +1,32 @@
+{% extends "layouts/default.njk" %}
+
+
+  {% block hero %}
+  {% include "components/hero-detail.njk" %}
+  {% endblock %}
+
+
+{% block content %} 
+
+<main class="content">  
+ <div class="grid-2-columns-2x1">
+
+ <div class="detailwrapper">
+<div class="detailcontentwrapper">{{ content | safe }}</div>
+{% include "components/global/tagged.html" %}
+</div>
+
+<div class="sidebarwrapper">
+<aside>
+<h3>Projects:</h3>
+{% set postslist = collections.Projects | reverse | limit(30) %}
+{% include "components/postslist-sidebar-200square.njk" %}
+</aside>
+</div>
+
+ </div>
+</main>
+{% endblock %}
+
+
+

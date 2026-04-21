@@ -1,0 +1,31 @@
+<section class="grid-3-columns" >
+	{% for post in postslist  %}
+	<summary class="Projectsummarylist conference fade-in" data-category='{{ post.data.filter }}'>
+			
+	
+
+<div class="Postimagehover">
+<a href="{{ post.url | url }}"><img src="{{ post.data.image }}/tr:w-400,h-300" alt="{{ post.data.title }}" title="{{ post.data.title }}" width="400px" height="auto" class="postlistimg"></a>
+</div>
+
+
+<div class="postsumtitle">
+<h3><a href="{{ post.url | url }}" title="{{ post.data.title }}">{{ post.data.Suburb }}</a></h3>
+</div>
+
+
+
+<div class="Projectsummarylistdesc">
+{% if post.data.description %}<p class="postsumhome">{{ post.data.description }}</p>{% endif %}
+</div>
+
+<div class="right postslistbutton">
+<a class="button success" role="button" title="{{ post.data.title }}" href="{{ post.url | url }}">Read more &gt;</a>
+</div>
+
+
+
+		</summary> 
+		
+	{% endfor %}
+</section>

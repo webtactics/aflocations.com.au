@@ -1,0 +1,9 @@
+README.md
+.github/
+_notes/
+_notes/LGANT
+
+# Exclude a folder and all its contents
+team/old/**
+
+admin/email-templates/**

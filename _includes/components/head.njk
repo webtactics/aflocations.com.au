@@ -1,0 +1,37 @@
+<head>
+<meta charset="utf-8">
+<meta name="generator" content="{{ eleventy.generator }}">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<link rel="apple-touch-icon" sizes="180x180" href="/static/img/favicon//apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/static/img/favicon//favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/static/img/favicon//favicon-16x16.png">
+<link rel="manifest" href="/static/img/favicon//site.webmanifest">
+<link rel="shortcut icon" href="/static/img/favicon/favicon.ico" />
+
+<meta name="view-transition" content="same-origin">
+
+<title>{{ title or metadata.title }} - {{ metadata.title }}</title>
+<link rel="canonical" href="https://aussieextensions.com.au{{ page.url or post.url or permalink }}" />
+<meta name="description" content="{{ description or metadata.description or eleventyComputed.description }}" />
+<meta property="og:title" content="{{ title or metadata.title }}" />
+<meta property="og:description" content="{{ description or metadata.description or eleventyComputed.description }}" />
+<meta property="article:published_time" content="{{ page.datecreated or datecreated }}" />
+<meta property="article:modified_time" content="{{ page.date }}" />
+<meta property="og:image" content="{{ image or metadata.image or eleventyComputed.image }}" />
+<meta property="og:url" content="https://aussieextensions.com.au{{ page.url or post.url or permalink }}" />
+
+
+{% set css %}
+    {% include "assets/css/aussie-ext-grid.css" %}
+  {% endset %}
+  <style>{{ css | cssmin | safe }}</style>
+  <style>
+.fade-in {transform: translateY(50px);opacity: 0;transition-property: transform, opacity;transition-duration: 1s;transition-timing-function: linear;}.fade-in.appear {transform: none;opacity: 1;}.from-left {-webkit-transform: translateX(-40%);transform: translateX(-40%);}.from-right {-webkit-transform: translateX(40%);transform: translateX(40%);}.from-left,.from-right {transition: opacity 250ms ease-in, -webkit-transform 800ms ease-in;transition: opacity 250ms ease-in, transform 800ms ease-in;transition: opacity 250ms ease-in, transform 800ms ease-in,-webkit-transform 800ms ease-in;opacity: 0;}.from-left.appear,.from-right.appear {-webkit-transform: translateX(0);transform: translateX(0);opacity: 1;}
+</style>
+<link rel="preload" href="https://webtactics.b-cdn.net/fonts/encode-sans-condensed-v10-latin-regular.woff2" as="font" type="font/woff2" crossorigin> 
+
+{% include "components/global/seo.js" %}
+
+</head>

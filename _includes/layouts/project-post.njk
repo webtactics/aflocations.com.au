@@ -1,0 +1,26 @@
+---
+layout: layouts/detail.njk
+section: post
+---
+
+
+
+
+<article{% if post.url == url %} data-current="current item"{% endif %} >
+<div class="item postdetail">
+
+<div class="postdetailsuburb"><h3>Suburb: {{ Suburb }}</h3></div>
+<div class="postdetailfilter"><h3>Type: {{ Subtitle }}</h3></div>
+
+
+<div class="postdetailimage" align="center"><img src="{{ image }}/tr:w-800,h-600" alt="{{ imageAlt }}" title="{{ imageAlt }}" width="800px" height="auto" class="project-postimg"></div>
+
+
+<div class="postdetailcontent">     
+{{ content | safe }}
+</div>
+
+  
+    
+</div>
+</article>

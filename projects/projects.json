@@ -1,0 +1,9 @@
+{
+    "layout": "layouts/project-post.njk",
+    "permalink": "projects/{{ title | slug }}/index.html",
+    "class": "projects",
+    "tags": [
+      "Projects"
+    ]
+  }
+  

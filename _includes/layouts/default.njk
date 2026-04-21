@@ -1,0 +1,52 @@
+<!doctype html>
+<html {% if section %} data-current="{{ section }}"{% endif %} lang="en">
+
+{% include "components/head.njk" %}
+
+{% block header %}
+<body class="internal {{ class }} " >
+{% include "components/header.njk" %}
+{% include "components/off-canvas.njk" %}
+{% endblock %}
+  {% block hero %}
+  {% include "components/hero.njk" %}
+  {% endblock %}
+
+<div class="container">
+{% block content %}
+<main class="content">  
+{{ content | safe }}
+</main>
+{% endblock %}
+</div>
+{% block ctacontent %}
+<section class="sectioncta">  
+<div class="cta content fade-in"> 
+{% include "components/cta.html" %}
+</div>
+</section>
+{% endblock %}
+
+{% block partners %}
+<section class="sectionpartners"> 
+{% include "components/global/projects.html" %}
+</section>
+{% endblock %}
+
+{% block profile %}{% endblock %}
+
+<footer class="footernavwrapper"> 
+<div class="footernavfullwidth">  
+{% include "components/nav-footer.njk" %}
+</div>
+<div class="footerdetails"> 
+{% include "components/footer.njk" %}
+</div>
+</footer>
+
+
+
+{% include "components/javascript.njk" %}
+
+</body>
+</html>

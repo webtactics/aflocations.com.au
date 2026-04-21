@@ -1,0 +1,33 @@
+<div class="partner content">
+    <div class="partnerwrapper">
+
+        <h3>Projects</h3>
+        <p class="nopad">A few  of the many projects that Aussie Extensions have worked on.</p>
+
+  <div class="tagged">
+
+
+      <div class="filter">
+        <h2 class="visually-hidden">Filter by type of conference</h2>
+        <button class='filter-btn active' data-filter="all" title="Filter for all" alt="Filter for all">All</button>
+        <button class='filter-btn' data-filter="2ndlevel" title="Filter for 2nd Level" alt="Filter for 2nd Level">2nd Level</button>
+        <button class='filter-btn' data-filter="bathroom" title="Filter for Bathroom" alt="Filter for Bathroom">Bathroom</button>
+        <button class='filter-btn' data-filter="kitchen" title="Filter for Kitchen" alt="Filter for Kitchen">Kitchen</button>
+        <button class='filter-btn' data-filter="outdoor" title="Filter for Outdoor" alt="Filter for Outdoor">Outdoor</button>
+        <button class='filter-btn' data-filter="pool" title="Filter for Pool" alt="Filter for Pool">Pool</button>
+        <button class='filter-btn' data-filter="renovation" title="Filter for Renovation" alt="Filter for Renovation">Renovation</button>
+      </div>
+
+
+    </div>
+    
+ 
+
+
+{% set postslist = collections.Projects %}
+{% include "components/postslist.njk" %}
+
+
+
+    </div>
+    </div>
