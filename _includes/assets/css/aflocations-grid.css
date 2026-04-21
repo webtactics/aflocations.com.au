@@ -1177,20 +1177,18 @@ ul li.taggs a:hover {
   position: absolute;
   top: 20vh;
   left: 20vw;
-  right: auto;
+  right: 20vw;
   z-index: 1000;
   background: var(--primary60);
   color: var(--white);
   font-size: 14px;
   line-height: 18px;
   padding: 1rem;
-  width: calc(80vw - 2rem);
-  max-width: 1000px;
+  width: 60vw;
   border-radius: 10px;
   text-align: left;
 }
 
-.flex-caption.centre { left: 20vw; right: auto; }
 
 .flex-caption h1
  {
