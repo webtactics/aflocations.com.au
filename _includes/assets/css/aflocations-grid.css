@@ -1661,8 +1661,8 @@ ul li.taggs a:hover {
   padding:0;margin: 0;
 }
 
-.slick-slide {
+.slick-track {
 background: url("/static/img/assets/dot.png") repeat fixed 0 0 transparent;
-z-index: 8;
+z-index: 1000;
 }
 
