@@ -1174,7 +1174,7 @@ ul li.taggs a:hover {
 
 /* captions: absolute inside slide-wrap, above dot */
 .flex-caption {
-  position: relative;
+  position: absolute;
   top: 20vh;
   left: 20vw;
   right: auto;
