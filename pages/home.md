@@ -8,9 +8,7 @@ description: From urban grunge, to sophisticated lifestyle or rural idyll - chan
 metadata:
   title: Australian Film Locations
 permalink: /
-eleventyNavigation:
-  key: Home
-  order: 0
+
 ---
 
 <strong>Iconic, inspired and filmic locations</strong> – that’s our specialty.
