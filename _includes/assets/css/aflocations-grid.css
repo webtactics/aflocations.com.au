@@ -271,7 +271,7 @@ transition: all var(--animation-delay);
     position: absolute;
     right: 0;
     text-align: right;
-      aspect-ratio: 330/118;
+      aspect-ratio: 160/57;
 max-width:160px;
   }
 }
