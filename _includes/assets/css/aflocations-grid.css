@@ -84,23 +84,22 @@ a img {border: 0;}
 
 a {
   line-height: inherit;
-  color: var(--primarydark);
-
+  color: var(--white);
   cursor: pointer;
  }
 
 
 
 a:hover {
-  color: var(--black);
+  color: var(--white);
   border: none;
   
 
 }
 a:not([class]) {
 	text-underline-offset: 0.25em;
-  text-decoration-thickness: 0.4rem;
-  text-decoration-color: var(--primarydark);
+  text-decoration-thickness: 0.25rem;
+  text-decoration-color: var(--white);
 }
 
 
