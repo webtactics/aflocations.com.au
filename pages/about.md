@@ -9,7 +9,7 @@ permalink: /about-us/
 metadata:
   title: About Australian Film Locations
 eleventyNavigation:
-  key: About-Us
+  key: About Us
   order: 2
 ---
 <strong>Iconic, inspired and filmic locations</strong> – that’s our specialty.
