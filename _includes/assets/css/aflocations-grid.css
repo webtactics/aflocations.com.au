@@ -1221,5 +1221,6 @@ ul li.taggs a:hover {
   left: 0.5rem;
   right: 0.5rem;
   width: auto;
+     padding: 0.5rem;
   }
 }
