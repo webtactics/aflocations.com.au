@@ -1176,7 +1176,7 @@ ul li.taggs a:hover {
 .dot-overlay {
   position: absolute;
   top: 0; left: 0; right: 0; bottom: 0;
-  background-image: url('/static/img/assets/dot.png');
+  background-image: url('https://ik.imagekit.io/webtactics/aflocations/assets/dot_byxNEbj71.png');
   background-repeat: repeat;
   pointer-events: none;
   z-index: 1;
