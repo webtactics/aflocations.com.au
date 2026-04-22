@@ -1,5 +1,5 @@
 ---
-layout: layouts/default.njk
+layout: layouts/contact.njk
 title: Contact Australian Film Locations Pty Ltd
 class: contact
 description: Contact Australian Film Locations Pty Ltd

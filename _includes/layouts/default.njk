@@ -4,28 +4,17 @@
 {% include "components/head.njk" %}
 
 {% block header %}
-<body class="internal {{ class }} " >
+<body class=" {{ class }} " >
 {% include "components/header.njk" %}
 {% include "components/off-canvas.njk" %}
 {% endblock %}
   {% block hero %}
 
-
-
-
 <section class="sliderbox hide-for-print">
 <div class="home-slide hide-for-print">
 
   <div class="slide-wrap">
- {% if entry.url == "/about-us/" %}
-  <div class="internalhero" style="background-image: url(/static/img/hero/about-1.jpg);"></div>
-  {% elif entry.url == "/services/" %}
-  <div class="internalhero" style="background-image: url(/static/img/hero/services-1.jpg);"></div>
-{% elif entry.url == "/contact/" %}
-  <div class="internalhero" style="background-image: url(/static/img/hero/contact-1.jpg);"></div>
-{% else %}
   <div class="internalhero" style="background-image: url(/static/img/hero/home-1.jpg);"></div>
-{% endif %}
     <div class="dot-overlay"></div>
      <div class="flex-caption centre">
       <h1>{{ title}}</h1>
@@ -34,14 +23,8 @@
   </div>
 
   
-
-
-
 </div>
 </section>
-
-
-
 
 
   {% endblock %}

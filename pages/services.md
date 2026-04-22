@@ -1,5 +1,5 @@
 ---
-layout: layouts/default.njk
+layout: layouts/services.njk
 title: Australian Film Locations Services
 description: Our Locations Database is vast – thousands of houses and an almost infinite number of interesting and unusual locations from around Australia and the South Pacific.
 class: services

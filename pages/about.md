@@ -1,5 +1,5 @@
 ---
-layout: layouts/default.njk
+layout: layouts/about.njk
 title: About Australian Film Locations
 description: Iconic, inspired and filmic locations – that’s our specialty.
 section: about
