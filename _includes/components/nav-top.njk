@@ -4,6 +4,9 @@
 <li{% if entry.url == page.url %} class="active-class"{% endif %}>
 <a href="{{ entry.url }}" title="{{ entry.title }}" alt="{{ entry.title }}">{{ entry.title }}</a>
 
+ {% if entry.url == "/" %}
+<li class="hide"><a href="/" title="Home" alt="Home">Home</a></li>
+{% endif %}
 
 
     {% if entry.children.length %}
