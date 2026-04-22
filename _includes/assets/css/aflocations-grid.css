@@ -267,7 +267,7 @@ transition: all var(--animation-delay);
 
 
   @media screen and (max-width: 1025px) {
-  .logo {
+  .logo img {
     position: absolute;
     right: 0;
     text-align: right;
