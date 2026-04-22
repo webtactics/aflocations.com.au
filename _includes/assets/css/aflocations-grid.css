@@ -598,7 +598,7 @@ ul.off-canvas-list li a {
 
 ul.off-canvas-list li a:hover, ul.off-canvas-list li a:focus {
   color: var(--black);
-  background: var(--primary);
+  background: var(--yellow);
   font-weight: bold;
 }
 
@@ -608,7 +608,7 @@ ul.off-canvas-list > li.current > a, ul.off-canvas-list > li.active-class > a {
 
   ul.off-canvas-list > li.parent > a {
     color: var(--primary);
-    background-color: var(--black); font-weight: bold;}
+    background-color: var(--yellow); font-weight: bold;}
 
 ul.off-canvas-list > li.parent > a:hover {
 color: var(--white);
