@@ -13,13 +13,9 @@ eleventyNavigation:
   order: 0
 ---
 
+<strong>Iconic, inspired and filmic locations</strong> – that’s our specialty.
 
 From urban grunge, to sophisticated lifestyle or rural idyll - chances are we’ll have it in our extensive database, or if not, we’ll find it for you.
-
-
-
-
-
 
 
 
