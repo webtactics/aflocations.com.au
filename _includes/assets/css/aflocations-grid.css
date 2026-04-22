@@ -1178,13 +1178,13 @@ ul li.taggs a:hover {
   top: 20vh;
   left: 20vw;
   right: 20vw;
+  width: 60vw;
+   padding: 1rem;
   z-index: 1000;
   background: var(--primary60);
   color: var(--white);
   font-size: 14px;
   line-height: 18px;
-  padding: 1rem;
-  width: 60vw;
   border-radius: 10px;
   text-align: left;
 }
@@ -1202,13 +1202,13 @@ ul li.taggs a:hover {
 .flex-caption p  {color: var(--white);font-size: 0.75rem;line-height:1.4em;}
 
 /* mobile */
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 1100px) {
   .flex-caption,
   .flex-caption.centre,
   {
-    left: 1rem;
-    right: 1rem;
-    width: auto;
-    bottom: 15vh;
+  top: 100px;
+  left: 0.5rem;
+  right: 0.5rem;
+  width: auto;
   }
 }
