@@ -12,17 +12,21 @@ eleventyNavigation:
   key: Contact
   order: 4
 ---
-<strong>Australian Film Locations Pty Ltd</strong>
-<p>Studio 15<br>151 Foveaux Street<br>Surry Hills NSW 2010</p>
-<p>P 02 9331 2160<br>F 02 9331 2159</p>
-<p><a href="mailto:info@aflocations.com.au">info@aflocations.com.au</a></p>
+<p>Studio 15<br>
+151 Foveaux Street<br>
+Surry Hills NSW 2010<br>
+P 02 9331 2160<br>
+F 02 9331 2159<br>
+<a href="mailto:info@aflocations.com.au">info@aflocations.com.au</a></p>
 
 
 
 
-<strong>Chris Mayer-Plummer</strong><br>
-<p>0412 105 485<br><a href="mailto:chris@aflocations.com.au">chris@aflocations.com.au</a></p>
+<p><strong>Chris Mayer-Plummer</strong><br>
+0412 105 485<br>
+<a href="mailto:chris@aflocations.com.au">chris@aflocations.com.au</a></p>
 
-<strong>Morgan Supple</strong>
-<p>0438 507 005<br><a href="mailto:morgan@aflocations.com.au">morgan@aflocations.com.au</a></p>
+<p><strong>Morgan Supple</strong><br>
+0438 507 005<br>
+<a href="mailto:morgan@aflocations.com.au">morgan@aflocations.com.au</a></p>
 
