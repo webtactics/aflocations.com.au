@@ -1200,7 +1200,9 @@ ul li.taggs a:hover {
   text-align: left;
 }
 
-
+.home .flex-caption {
+  top: 50vh;
+}
 .flex-caption h1
  {
   color: var(--white);
@@ -1215,7 +1217,8 @@ ul li.taggs a:hover {
 /* mobile */
 @media screen and (max-width: 1100px) {
   .flex-caption,
-  .flex-caption.centre
+  .flex-caption.centre,
+  .home .flex-caption
   {
   top: 100px;
   left: 0.5rem;
@@ -1224,3 +1227,4 @@ ul li.taggs a:hover {
      padding: 0.5rem;
   }
 }
+
