@@ -1104,3 +1104,8 @@ margin: 0 0 0.75rem 0;
   justify-content: center;
   align-content: center;
 }
+
+.button-group a {
+font-size: 1rem;
+padding: 0.5rem 1rem;
+}
