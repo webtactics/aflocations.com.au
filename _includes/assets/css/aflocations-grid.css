@@ -585,7 +585,7 @@ background-color: var(--primary); font-weight: bold;}
 
 .grid-3-columns {
   grid-template-columns: repeat(3, 1fr);
-   gap: 1.5rem;
+   gap: 1rem;
 }
 
 .grid-4 {
@@ -1100,8 +1100,7 @@ margin: 0 0 0.75rem 0;
 
 .button-group {
   display: flex;
-  gap: 1rem;
-  margin-top: 1rem;
+  margin-top: 0.25rem;
   justify-content: center;
   align-content: center;
 }
