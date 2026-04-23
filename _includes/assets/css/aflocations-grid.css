@@ -505,79 +505,6 @@ transition: all var(--animation-delay);
 
 /* Menus */
 
-  
-
-.menusocial img {float:left; padding:0;background-color: var(--white);}
-.menusocial:hover img {float:left; padding:0;background-color: var(--white);}
-
-
-.menusocial > li {
-    display: inline-block;
-    padding: 0;
-    margin: 0;
-    border: none;
-    position: relative;
-    right: 0;
-    width: auto;
-    text-align: center;
-}
-
-
-
-.menusocial > li > a {
-  padding: 0;
-  line-height: 54px;
-  font-size: 1rem;
-  width:auto;
-  height:34px;
-text-decoration: none;
-font-weight: 400;
-cursor: pointer;
-display: block;
-position: relative;
-border-bottom: none;
-background-color: var(--black);
-margin:10px 0;
--webkit-transition: all var(--animation-delay);
-  -moz-transition: all var(--animation-delay);
-  -ms-transition: all var(--animation-delay);
-  -o-transition: all var(--animation-delay);
-  transition: all var(--animation-delay);
-
-}
-
-
-
-.menusocial > li > a:hover {
-  background-color: var(--white);
-  border-bottom: none;
-  transition: all var(--animation-delay-fast);
-}
-
-
-
-
-
-span.phonetext {font-size:1rem;line-height: 34px;text-align:right;color: var(--white);display: flex;justify-content: center;-webkit-transition: all var(--animation-delay);padding: 0 0.25rem 0 0.5rem;
-  -moz-transition: all var(--animation-delay);
-  -ms-transition: all var(--animation-delay);
-  -o-transition: all var(--animation-delay);
-  transition: all var(--animation-delay);}
-.menusocial:hover .phonetext {font-size:1rem;line-height: 34px;font-weight:700;text-align:right;color: var(--black);display: flex;justify-content: center;-webkit-transition: all var(--animation-delay);
-  -moz-transition: all var(--animation-delay);
-  -ms-transition: all var(--animation-delay);
-  -o-transition: all var(--animation-delay);
-  transition: all var(--animation-delay);}
-
-.mobilesocialwrapper {background-color: var(--mattblack);margin: 1rem 0 0 0;min-height:64px;padding:5px 0;}
-
-.mobilesocialwrapper ul.menusocial li {
-float: left;
-margin: 0 10px;
-}
-
-
-
 
 
 .mobilemenu {padding:0 0 1rem;}
@@ -597,14 +524,14 @@ ul.off-canvas-list li a {
 }
 
 ul.off-canvas-list li a:hover, ul.off-canvas-list li a:focus {
-  color: var(--black);
+  color: var(--white);
   background: var(--yellow);
   font-weight: bold;
 }
 
 ul.off-canvas-list > li.current > a, ul.off-canvas-list > li.active-class > a {
   color: var(--white);
-  background-color: var(--black); font-weight: bold;}
+  background-color: var(--yellow); font-weight: bold;}
 
   ul.off-canvas-list > li.parent > a {
     color: var(--primary);
@@ -651,12 +578,14 @@ background-color: var(--primary); font-weight: bold;}
 
 
 
-
-
-
 [class*="grid-"] {
   display: grid;
   gap: 1rem;
+}
+
+.grid-3-columns {
+  grid-template-columns: repeat(3, 1fr);
+   gap: 1.5rem;
 }
 
 .grid-4 {
@@ -680,10 +609,7 @@ background-color: var(--primary); font-weight: bold;}
 
 
 
-.grid-3-columns {
-  grid-template-columns: repeat(3, 1fr);
-   gap: 1.5rem;
-}
+
 .grid-2-columns {
   grid-template-columns: repeat(2, 1fr); gap: 2rem;
 }
@@ -728,48 +654,9 @@ grid-template-columns: 2fr 1fr;gap: 4rem;}
   }
 
 
-.img250 img {max-width: 250px;height:auto;aspect-ratio: 1 / 1;}
-
-.img400 img {max-width: 400px;height:auto;aspect-ratio: 1 / 1;}
-
-.img600 img {max-width:600px;height:auto;aspect-ratio: 60 / 36;}
-
-
-
-figure {
-  margin: 0;
-}
-
-figcaption {
-  font-size: 80%;
-  line-height: 120%;
-  color: var(--white);
-  background: var(--black);
-  padding: 0.5rem;
-  text-align: center;
-  max-width: auto;
-  margin:0 auto;
-}
 @media (max-width: 800px) {
-  .img400 img {max-width: 300px;height:auto;aspect-ratio: 1 / 1;}
 
-.img600 img {max-width:400px;height:auto;aspect-ratio: 60 / 36;}
-}
-@media (max-width: 600px) {
-
-  .imageright {
-    float: none;
-    max-width: 100%;
-    padding: 0;
-    text-align: center;
-    margin: 1rem auto;
-  
-  }
-  .imageright img {margin:0 auto;}
-
-  .img400 img,   .img600 img {max-width: 100%;}
-
-  .hidesmall, .hideforsmall {display:none;}
+.hidesmall, .hideforsmall {display:none;}
 }
 
 
@@ -1200,9 +1087,7 @@ ul li.taggs a:hover {
   text-align: left;
 }
 
-.home .flex-caption {
-  top: 35vh;
-}
+
 .flex-caption h1
  {
   color: var(--white);
